@@ -303,10 +303,6 @@ section.catalog-hero {
   margin-left: auto;
 }
 
-.advantages .main-wrapper {
-  padding: 0 275.5px;
-}
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
