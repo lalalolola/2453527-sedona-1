@@ -82,7 +82,7 @@ body {
 
 .main-description,
 .footer-mailing-description,
-.footer-mailing-catalog > .footer-mailing-description {
+.footer-mailing-catalog.footer-mailing > .footer-mailing-description {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 26px;
@@ -92,7 +92,11 @@ body {
   color: #333333;
 }
 
-.footer-mailing-catalog > .footer-mailing-title {
+.footer-mailing-catalog.footer-mailing > .footer-mailing-description {
+  margin-bottom: 54px;
+}
+
+.footer-mailing-catalog.footer-mailing > .footer-mailing-title {
   color: #000000;
 }
 
@@ -151,6 +155,10 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
+}
+
+.email.catalog {
+   background-color: #f2f2f2;
 }
 
 .phone-number {
@@ -218,8 +226,9 @@ body {
   margin-right: 8px;
 }
 
-.footer-mailing-catalog {
+.footer-mailing-catalog.footer-mailing {
   background-color: #ffffff;
+  background-image: none;
 }
 
 .active-link {
