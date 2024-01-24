@@ -54,7 +54,7 @@
       <main class="main-container catalog">
         <h1 class="visually-hidden">Каталог гостиниц с фильтрами</h1>
         <section class="catalog-hero">
-          <div class="catalog-container">
+          <div class="main-wrapper">
             <h2 class="visually-hidden">Фильтры для поиска</h2>
             <p class="catalog-title">Гостиницы Седоны</p>
             <ol class="breadcrumbs">
@@ -66,7 +66,6 @@
               </li>
             </ol>
             <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get">
-
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
@@ -145,31 +144,33 @@
           </div>
         </section>
         <section class="catalog-result">
-          <div class="catalog-container">
+          <div class="main-wrapper">
             <h2 class="visually-hidden">Результат поиска</h2>
-            <p class="results">Найдено гостиниц: <span>38</span></p>
-            <select class="select-control" aria-label="Сортирвка">
-              <option value="popular">Популярные</option>
-              <option value="cheap" selected>Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
-            <ul class="card-position-list">
-              <li class="card-position-item">
-                <a href="" class="button-view button--view-active">
-                  <span class="visually-hidden">Показать карточки</span>
-                </a>
-              </li>
-              <li class="card-position-item">
-                <a href="" class="button-view">
-                  <span class="visually-hidden">Показать крупные карточки</span>
-                </a>
-              </li>
-              <li class="card-position-item">
-                <a href="" class="button-view">
-                  <span class="visually-hidden">Показать список</span>
-                </a>
-              </li>
-            </ul>
+            <div class="catalog-result-wrapper">
+              <p class="results">Найдено гостиниц: <span>38</span></p>
+              <select class="select-control" aria-label="Сортирвка">
+                <option value="popular">Популярные</option>
+                <option value="cheap" selected>Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+              <ul class="card-position-list">
+                <li class="card-position-item">
+                  <a href="" class="button-view button--view-active">
+                    <span class="visually-hidden">Показать карточки</span>
+                  </a>
+                </li>
+                <li class="card-position-item">
+                  <a href="" class="button-view">
+                    <span class="visually-hidden">Показать крупные карточки</span>
+                  </a>
+                </li>
+                <li class="card-position-item">
+                  <a href="" class="button-view">
+                    <span class="visually-hidden">Показать список</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
             <ol class="hotel-list">
               <li class="hotel-card">
                 <a href="" class="hotel-card-link">
