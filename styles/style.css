@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -64,12 +65,18 @@ body {
 .hero {
   padding-top: 51px;
   padding-bottom: 82px;
-  background-image: url("../images/main/index-background.jpg");
+  background-image: url("../images/main/decor-main.svg"), url("../images/main/index-background.jpg");
   color: #000000;
   background-color: #3f5f72;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
+
+
+
+
+
 
 .main-title,
 .footer-mailing-title,
@@ -85,7 +92,7 @@ body {
 
 .main-description,
 .footer-mailing-description,
-.footer-mailing-catalog.footer-mailing > .footer-mailing-description {
+.footer-mailing-catalog.footer-mailing .footer-mailing-description {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 26px;
@@ -95,11 +102,11 @@ body {
   color: #333333;
 }
 
-.footer-mailing-catalog.footer-mailing > .footer-mailing-description {
+.footer-mailing-catalog.footer-mailing .footer-mailing-description {
   margin-bottom: 54px;
 }
 
-.footer-mailing-catalog.footer-mailing > .footer-mailing-title {
+.footer-mailing-catalog.footer-mailing .footer-mailing-title {
   color: #000000;
 }
 
@@ -130,6 +137,37 @@ body {
   line-height: 28px;
   text-align: center;
   margin: 0;
+}
+
+.services-item-title {
+  margin-bottom: 30px;
+}
+
+.advantages-item-title {
+  position: relative;
+  margin-bottom: 62px;
+}
+
+.advantages-item-title::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  margin-left: -30px;
+  top: 86px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item-wrapper > .advantages-item-title::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  margin-left: -30px;
+  top: 86px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item-description,
@@ -295,6 +333,15 @@ li:nth-child(5) .pagination-link {
   margin-bottom: 40px;
 }
 
+.catalog-result-wrapper::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(230, 230, 230, 1);
+  width: 1060px;
+  height: 1px;
+  bottom: 160px;
+}
+
 .results {
   text-align: start;
   margin: 0;
@@ -303,15 +350,37 @@ li:nth-child(5) .pagination-link {
 
 .card-position-list {
   display: flex;
-  justify-content: space-between;
-  min-width: 160px;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .button-view {
-  padding: 14px 12px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 17px 16px;
+  border: 2px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
+}
+
+.button-view-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.card-position-item:not(.card-position-item:last-child) {
+  margin-right: 8px;
+}
+
+.button--view-active {
+  border-color: rgba(0, 0, 0, 1);
 }
 
 .select-control {
@@ -343,6 +412,7 @@ li:nth-child(5) .pagination-link {
 }
 
 .catalog-result {
+  position: relative;
   padding-bottom: 60px;
   padding-top: 50px;
 }
@@ -418,7 +488,7 @@ li:nth-child(5) .pagination-link {
 .advantages-item:not(.advantages-big-item) {
   width: 400px;
   min-height: 385px;
-  padding: 103px 85px;
+  padding: 113px 85px;
   box-sizing: border-box;
 }
 
@@ -437,7 +507,7 @@ li:nth-child(5) .pagination-link {
 .advantages-item-wrapper {
   width: 230px;
   background-color: #82b3d3;
-  padding: 103px 85px;
+  padding: 102px 85px;
 }
 
 .services-list {
@@ -451,8 +521,20 @@ li:nth-child(5) .pagination-link {
 .services-item {
   width: 400px;
   min-height: 385px;
-  padding: 80px 85px;
+  padding: 183px 85px 80px;
   box-sizing: border-box;
+  background-image: url("../images/main/advantage-icon-food.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center 81px;
+}
+
+.services-item:first-child {
+  background-image: url("../images/main/advantage-icon-house.svg");
+}
+
+.services-item:last-child {
+  background-image: url("../images/main/advantage-icon-gift.svg");
 }
 
 .footer-social {
@@ -488,6 +570,7 @@ li:nth-child(5) .pagination-link {
 }
 
 .hotel-card {
+  position: relative;
   display: grid;
   row-gap: 16px;
   column-gap: 20px;
@@ -495,6 +578,25 @@ li:nth-child(5) .pagination-link {
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
+}
+
+.hotel-card::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 17px;
+  bottom: 30px;
+  left: 20px;
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: repeat-x;
+}
+
+.hotel-card:nth-child(3)::after {
+  width: 72px;
+}
+
+.hotel-card:last-child::after {
+  width: 48px;
 }
 
 .visually-hidden {
@@ -569,6 +671,7 @@ li:nth-child(5) .pagination-link {
   right: 0;
   bottom: 0;
   margin: auto;
+  fill: rgba(130, 179, 211, 1);
 }
 
 .footer-mailing .button {
@@ -611,9 +714,144 @@ li:nth-child(5) .pagination-link {
   bottom: 0;
   left: 0;
   margin: auto;
+  fill: rgba(0, 0, 0, 1);
 }
 
 .catalog {
   margin-top: -6px;
+}
+
+.amount-liked {
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  min-width: 20px;
+  height: 20px;
+  background-color: #7db54f;
+  border-radius: 50%;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+.active-page {
+  position: relative;
+}
+
+.active-page::after {
+  content: "";
+  background-color: rgba(117, 98, 87, 1);
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+}
+
+.user-link.button:hover,
+.search-hotel-button.button:hover,
+.more-details.button:hover,
+.user-link.button:focus,
+.search-hotel-button.button:focus,
+.more-details.button:focus {
+  background-color: rgba(97, 80, 72, 1);
+  outline: none;
+}
+
+.user-link.button:active,
+.search-hotel-button.button:active,
+.more-details.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(117, 97, 87, 1);
+}
+
+.footer-mailing button.button:hover,
+.button-to-like:hover,
+.footer-mailing button.button:focus,
+.button-to-like:focus {
+  background-color: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.pagination-link:not(.active-link):not(.pagination-no-active):hover,
+.pagination-link:not(.active-link):not(.pagination-no-active):focus {
+  border: 1px solid rgba(130, 179, 211, 1);
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.footer-mailing button.button:active,
+.button-to-like:active,
+.pagination-link:not(.active-link):not(.pagination-no-active):active {
+  color: rgba(255, 255, 255, 0.3);
+  border: none;
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.pagination-link:focus,
+.footer-social-item-link:hover,
+.footer-social-item-link:focus,
+.link-logo-htmlacademy:focus .logo-htmlacademy,
+.phone-number:focus {
+  outline: none;
+}
+
+.footer-social-item-link:hover .social-icon,
+.footer-social-item-link:focus .social-icon {
+  fill: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.footer-social-item-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.button-liked:hover,
+.button-liked:focus {
+  background-color: rgba(108, 158, 66, 1);
+  outline: none;
+}
+.button-liked:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(125, 181, 79, 1);
+}
+
+.logo-htmlacademy {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.link-logo-htmlacademy:hover .logo-htmlacademy,
+.link-logo-htmlacademy:focus .logo-htmlacademy,
+.user-link:hover .user-link-icon,
+.user-link:focus .user-link-icon {
+  fill: rgba(117, 97, 87, 1);
+}
+
+.phone-number:hover,
+.phone-number:focus,
+.nav-link:hover,
+.nav-link:focus {
+  color: rgba(117, 97, 87, 1);
+}
+.link-logo-htmlacademy:active .logo-htmlacademy,
+.user-link:active .user-link-icon {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.phone-number:active,
+.nav-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.button-view:hover {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.button-view:focus {
+  border-color: rgba(104, 162, 202, 1);
+  outline: none;
+}
+
+.button-view:active {
+  border-color: rgba(0, 0, 0, 1);
 }
 
