@@ -73,11 +73,6 @@ body {
   background-position: center bottom;
 }
 
-
-
-
-
-
 .main-title,
 .footer-mailing-title,
 .results {
@@ -734,6 +729,7 @@ li:nth-child(5) .pagination-link {
   font-size: 10px;
   text-align: center;
 }
+
 .active-page {
   position: relative;
 }
@@ -810,6 +806,7 @@ li:nth-child(5) .pagination-link {
   background-color: rgba(108, 158, 66, 1);
   outline: none;
 }
+
 .button-liked:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: rgba(125, 181, 79, 1);
@@ -832,6 +829,7 @@ li:nth-child(5) .pagination-link {
 .nav-link:focus {
   color: rgba(117, 97, 87, 1);
 }
+
 .link-logo-htmlacademy:active .logo-htmlacademy,
 .user-link:active .user-link-icon {
   fill: rgba(117, 97, 87, 0.3);
@@ -854,4 +852,3 @@ li:nth-child(5) .pagination-link {
 .button-view:active {
   border-color: rgba(0, 0, 0, 1);
 }
-
