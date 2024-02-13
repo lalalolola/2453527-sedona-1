@@ -967,7 +967,9 @@ li:nth-child(5) .pagination-link {
 }
 
 .range-input::-webkit-inner-spin-button,
-.range-input::-webkit-outer-spin-button {
+.range-input::-webkit-outer-spin-button,
+.modal-search-form-input::-webkit-outer-spin-button,
+.modal-search-form-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1034,15 +1036,51 @@ li:nth-child(5) .pagination-link {
   left: 0;
 }
 
-.modal-search {
+.modal {
   position: relative;
   margin: auto;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 30px;
   padding: 64px 70px;
+  box-sizing: border-box;
+}
+
+.modal-search {
+  width: 717px;
+}
+
+.close-modal {
+  position: absolute;
+  background-color: rgba(242, 242, 242, 1);
+  background-image: url("../images/modal/close-modal.svg");
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 52px;
+  cursor: pointer;
 }
 
 .modal-content .main-title {
   margin-bottom: 64px;
   text-align: start;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal-search-form-input {
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 45px 12px 20px;
+
 }
