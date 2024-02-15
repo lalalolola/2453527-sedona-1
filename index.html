@@ -195,20 +195,29 @@
           </button>
           <section class="modal-content">
             <h2 class="main-title">Поиск гостиницы в седоне</h2>
-            <form class="modal-search-form">
-              <label class="modal-search-form-label">Дата заезда
-                <input class="modal-search-form-input" type="text" value="27 апреля 2020">
+            <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="modal-search-form-label">Дата Заезда:
+                <input class="modal-search-form-input date" type="text" value="27 апреля 2020">
               </label>
-              <label class="modal-search-form-label">Дата выезда
-                <input class="modal-search-form-input" type="text" value="1 сентября 2023">
+              <p class="modal-search-form-wrong">Мы не можем отправить вас в прошлое.</p>
+              <label class="modal-search-form-label">Дата Выезда:
+                <input class="modal-search-form-input date" type="text" value="1 сентября 2023">
               </label>
-              <label class="modal-search-form-label">Взрослые
-                <input class="modal-search-form-input" type="number" value="2">
-              </label>
-              <label class="modal-search-form-label">Дети
-                <span></span>
-                <input class="modal-search-form-input" type="number" value="2">
-              </label>
+              <p class="modal-search-form-correct">На эти даты есть свободные номера. Пока есть.</p>
+              <div class="amount-wrapper">
+                <label class="modal-search-form-label amount-adult">Взрослые:
+                  <button type="button" class="button-amount adult-less">+</button>
+                  <input class="modal-search-form-input amount" type="number" value="2">
+                  <button type="button" class="button-amount adult-more">+</button>
+                </label>
+                <label class="modal-search-form-label amount-kids">Дети:
+                  <span></span>
+                  <button type="button" class="button-amount kids-less">-</button>
+                  <input class="modal-search-form-input amount" type="number" value="2">
+                  <button type="button" class="button-amount kids-more">-</button>
+                </label>
+              </div>
+
               <button class="button modal-search-form-button" type="submit">Найти</button>
             </form>
           </section>
