@@ -1104,25 +1104,29 @@ li:nth-child(5) .pagination-link {
   font-weight: 700;
 }
 
-.modal-search-form-label.amount-adult {
-  grid-column: 1 / 3;
-}
-
 .amount-wrapper {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
 }
 
-.modal-search-form-label-min {
-  display: grid;
-  grid-template-columns: 137px 40px min-content 40px;
+.little-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.modal-search-form-label-min.amount-kids {
-  position: relative;
-  display: grid;
-  grid-template-columns: 131px 40px min-content 40px;
+.adults-wrapper {
+  min-width: 247px;
+}
+
+.kids-wrapper {
+  min-width: 242px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  width: 110px;
 }
 
 .modal-search-form-input.amount {
@@ -1132,21 +1136,6 @@ li:nth-child(5) .pagination-link {
   box-sizing: border-box;
   line-height: 20px;
   text-align: center;
-  grid-column: 3 / 4;
-  grid-row: 1;
-}
-
-.button-amount.kids-less,
-.button-amount.adult-less {
-  grid-column: 2 / 3;
-  grid-row: 1;
-}
-
-.button-amount.kids-more,
-.button-amount.adult-more {
-  grid-column: 4 / 5;
-  grid-row: 1;
-  border-radius: 0 4px 4px 0;
 }
 
 .button-amount {
@@ -1157,6 +1146,11 @@ li:nth-child(5) .pagination-link {
   cursor: pointer;
   position: relative;
   padding: 0;
+}
+
+.button-amount.kids-more,
+.button-amount.adult-more {
+  border-radius: 0 4px 4px 0;
 }
 
 .button-amount::before {
