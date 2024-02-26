@@ -217,11 +217,11 @@
             <h2 class="main-title">Поиск гостиницы в седоне</h2>
             <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="modal-search-form-label search-form-title">Дата Заезда:
-                <input class="modal-search-form-input date" type="text" placeholder="Укажите дату" value="27 апреля 2020">
+                <input class="modal-search-form-input date" type="text" placeholder="Укажите дату" value="27 апреля 2020" name="arrival-date">
               </label>
               <p class="modal-search-form-wrong">Мы не можем отправить вас в прошлое.</p>
               <label class="modal-search-form-label search-form-title">Дата Выезда:
-                <input class="modal-search-form-input date" type="text" placeholder="Укажите дату" value="1 сентября 2023">
+                <input class="modal-search-form-input date" type="text" placeholder="Укажите дату" value="1 сентября 2023" name="date-of-departure">
               </label>
               <p class="modal-search-form-correct">На эти даты есть свободные номера. Пока есть.</p>
               <div class="amount-wrapper">
@@ -236,7 +236,7 @@
                         <path d="M0 0v2h14V0H0Z" fill="CurrentColor"/>
                       </svg>
                     </button>
-                    <input class="modal-search-form-input amount" id="adults-number" type="number" value="2">
+                    <input class="modal-search-form-input amount" id="adults-number" type="number" value="2" name="amount-of-adults">
                     <button type="button" class="button-amount adult-more">
                       <span class="visually-hidden">Добавить одного взрослого</span>
                       <svg width="14" height="14" class="plus-icon" viewBox="0 0 14 14" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
@@ -270,7 +270,7 @@
                         <path d="M0 0v2h14V0H0Z" fill="CurrentColor"/>
                       </svg>
                     </button>
-                    <input class="modal-search-form-input amount" id="kids-number" type="number" value="2">
+                    <input class="modal-search-form-input amount" id="kids-number" type="number" value="2" name="amount-of-kids">
                     <button type="button" class="button-amount kids-more">
                       <span class="visually-hidden">Добавить одного ребенка</span>
                       <svg width="14" height="14" class="plus-icon " viewBox="0 0 14 14" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
