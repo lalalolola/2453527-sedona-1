@@ -341,7 +341,7 @@ li:nth-child(5) .pagination-link {
 .hotel-list::after {
   content: "";
   position: absolute;
-  background-color: rgba(230, 230, 230, 1);
+  background-color: #e6e6e6;
   left: 0;
   right: 0;
   height: 1px;
@@ -349,10 +349,8 @@ li:nth-child(5) .pagination-link {
 }
 
 .results {
-  text-align: start;
-  align-self: center;
   margin: 0;
-  padding: 0;
+  padding: 6px 0;
 }
 
 .card-position-list {
@@ -370,7 +368,7 @@ li:nth-child(5) .pagination-link {
   min-width: 48px;
   min-height: 48px;
   padding: 17px 16px;
-  border: 2px solid rgba(229, 229, 229, 1);
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
 
@@ -392,19 +390,19 @@ li:nth-child(5) .pagination-link {
 }
 
 .button--view-active {
-  border-color: rgba(0, 0, 0, 1);
+  border-color: #000000;
 }
 
 .select-control {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
   margin: 0 70px 0 auto;
   padding-left: 16px;
   padding-right: 35px;
   box-sizing: border-box;
-  border: 2px solid rgba(229, 229, 229, 1);
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   width: 292px;
   height: 49px;
@@ -417,15 +415,16 @@ li:nth-child(5) .pagination-link {
 
 .select-control:focus,
 .select-control:hover {
-  border-color: rgba(104, 162, 202, 1);
+  border-color: #68a2ca;
 }
 
 .select-control:focus:not(:focus-visible) {
-  border-color: rgba(63, 94, 114, 1);
+  border-color: #3f5e72;
 }
 
 .select-control:focus-visible {
-  border-color: rgba(104, 162, 202, 1);
+  outline: none;
+  border-color: #68a2ca;
 }
 
 .select-control:disabled {
@@ -479,7 +478,7 @@ li:nth-child(5) .pagination-link {
 }
 
 .control-input:focus + .control-mark {
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid #83b3d3;
 }
 
 .control-input:focus:not(:focus-visible) + .control-mark {
@@ -487,7 +486,7 @@ li:nth-child(5) .pagination-link {
 }
 
 .control-input:focus-visible + .control-mark {
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid #83b3d3;
 }
 
 .catalog-title {
@@ -508,8 +507,8 @@ li:nth-child(5) .pagination-link {
 }
 
 .button-to-reset:focus {
-  color: rgba(255, 255, 255, 1);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  color: #ffffff;
+  outline: 3px solid #83b3d3;
 }
 
 .button-to-reset:focus:not(:focus-visible) {
@@ -517,8 +516,8 @@ li:nth-child(5) .pagination-link {
 }
 
 .button-to-reset:focus-visible {
-  color: rgba(255, 255, 255, 1);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  color: #ffffff;
+  outline: 3px solid #83b3d3;
 }
 
 .button-to-reset:active {
@@ -792,7 +791,7 @@ li:nth-child(5) .pagination-link {
   right: 0;
   bottom: 0;
   margin: auto;
-  fill: rgba(130, 179, 211, 1);
+  fill: #82b3d3;
 }
 
 .footer-mailing .button {
@@ -843,7 +842,7 @@ li:nth-child(5) .pagination-link {
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: rgba(0, 0, 0, 1);
+  fill: #000000;
 }
 
 .catalog {
@@ -870,7 +869,7 @@ li:nth-child(5) .pagination-link {
 
 .active-page::after {
   content: "";
-  background-color: rgba(117, 98, 87, 1);
+  background-color: #756257;
   position: absolute;
   bottom: 5px;
   left: 16px;
@@ -884,14 +883,14 @@ li:nth-child(5) .pagination-link {
 .user-link.button:focus,
 .search-hotel-button.button:focus,
 .more-details.button:focus {
-  background-color: rgba(97, 80, 72, 1);
+  background-color: #615048;
 }
 
 .user-link.button:active,
 .search-hotel-button.button:active,
 .more-details.button:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(117, 97, 87, 1);
+  background-color: #756157;
 }
 
 .footer-mailing button.button:hover,
@@ -902,18 +901,18 @@ li:nth-child(5) .pagination-link {
 .button-to-apply:focus,
 .modal-search-form-button:hover,
 .modal-search-form-button:focus {
-  background-color: rgba(104, 162, 202, 1);
+  background-color: #68a2ca;
 }
 
 .pagination-link:not(.active-link):not(.pagination-no-active):hover,
 .pagination-link:not(.active-link):not(.pagination-no-active):focus {
-  border: 1px solid rgba(130, 179, 211, 1);
-  background-color: rgba(104, 162, 202, 1);
+  border: 1px solid #82b3d3;
+  background-color: #68a2ca;
 }
 
 .modal-search-form-button:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(104, 162, 202, 1);
+  background-color: #68a2ca;
 }
 
 .footer-mailing button.button:active,
@@ -922,12 +921,12 @@ li:nth-child(5) .pagination-link {
 .pagination-link:not(.active-link):not(.pagination-no-active):active {
   color: rgba(255, 255, 255, 0.3);
   border: none;
-  background-color: rgba(130, 179, 211, 1);
+  background-color: #82b3d3;
 }
 
 .footer-social-item-link:hover .social-icon,
 .footer-social-item-link:focus .social-icon {
-  fill: rgba(104, 162, 202, 1);
+  fill: #68a2ca;
 }
 
 .footer-social-item-link:active .social-icon {
@@ -936,17 +935,17 @@ li:nth-child(5) .pagination-link {
 
 .button-liked:hover,
 .button-liked:focus {
-  background-color: rgba(108, 158, 66, 1);
+  background-color: #6c9e42;
 }
 
 .button-liked:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(125, 181, 79, 1);
+  background-color: #7db54f;
 }
 
 .button:disabled {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(229, 229, 229, 1);
+  color: #ffffff;
+  background-color: #e5e5e5;
 }
 
 .button-to-reset:disabled {
@@ -955,21 +954,21 @@ li:nth-child(5) .pagination-link {
 }
 
 .logo-htmlacademy {
-  fill: rgba(0, 0, 0, 1);
+  fill: #000000;
 }
 
 .link-logo-htmlacademy:hover .logo-htmlacademy,
 .link-logo-htmlacademy:focus .logo-htmlacademy,
 .user-link:hover .user-link-icon,
 .user-link:focus .user-link-icon {
-  fill: rgba(117, 97, 87, 1);
+  fill: #756157;
 }
 
 .phone-number:hover,
 .phone-number:focus,
 .nav-link:hover,
 .nav-link:focus {
-  color: rgba(117, 97, 87, 1);
+  color: #756157;
 }
 
 .link-logo-htmlacademy:active .logo-htmlacademy,
@@ -983,16 +982,16 @@ li:nth-child(5) .pagination-link {
 }
 
 .button-view:hover {
-  border-color: rgba(0, 0, 0, 1);
+  border-color: #000000;
 }
 
 .button-view:focus {
   outline: none;
-  border-color: rgba(104, 162, 202, 1);
+  border-color: #68a2ca;
 }
 
 .button-view:active {
-  border-color: rgba(0, 0, 0, 1);
+  border-color: #000000;
 }
 
 .catalog-filter-wrapper {
@@ -1034,7 +1033,7 @@ li:nth-child(5) .pagination-link {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .range-toggle {
@@ -1045,6 +1044,7 @@ li:nth-child(5) .pagination-link {
   border: none;
   padding: 0;
   cursor: pointer;
+  background-color: inherit;
 }
 
 .range-toggle:hover {
@@ -1053,17 +1053,17 @@ li:nth-child(5) .pagination-link {
 
 .range-toggle:focus {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid #83b3d3;
 }
 
 .range-toggle:focus:not(:focus-visible) {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
-  outline: 2px solid rgba(131, 179, 211, 1);
+  outline: 2px solid #83b3d3;
 }
 
 .range-toggle:focus-visible {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid #83b3d3;
 }
 
 .toggle-min {
@@ -1108,34 +1108,23 @@ li:nth-child(5) .pagination-link {
   width: 143px;
   box-sizing: border-box;
   border-radius: 0 4px 4px 0;
-  border: 2px solid transparent;
+  border: none;
   appearance: none;
 }
 
-.range-input:hover {
-  background-color: rgba(230, 230, 230, 1);
+.range-input:hover,
+.modal-search-form-input:hover {
+  background-color: #e6e6e6;
 }
 
 .range-input:focus {
-  background-color: rgba(230, 230, 230, 1);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
-.range-input:focus:not(:focus-visible) {
-  border: 2px solid rgba(0, 0, 0, 1);
-  outline: none;
-  background-color: rgba(242, 242, 242, 1);
-}
-
-.range-input:focus-visible {
-  background-color: rgba(230, 230, 230, 1);
-  outline: 3px solid rgba(131, 179, 211, 1);
-}
-
-.range-input:active {
-  border: 2px solid rgba(0, 0, 0, 1);
-  outline: none;
-  background-color: rgba(242, 242, 242, 1);
+.range-input:placeholder-shown:focus {
+  outline: 2px solid #000000;
+  background-color: #f2f2f2;
 }
 
 .range-wrapper-min .range-input {
@@ -1152,7 +1141,7 @@ li:nth-child(5) .pagination-link {
 
 .range-input,
 .modal-search-form-input {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .button-to-apply {
@@ -1173,7 +1162,7 @@ li:nth-child(5) .pagination-link {
   width: 20px;
   height: 20px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -1182,7 +1171,7 @@ li:nth-child(5) .pagination-link {
 
 .control-input[type="radio"]:checked + .control-mark {
   background-color: transparent;
-  border: 5px solid rgba(255, 255, 255, 1);
+  border: 5px solid #ffffff;
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -1220,7 +1209,7 @@ li:nth-child(5) .pagination-link {
 .modal {
   position: relative;
   margin: auto;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   border-radius: 30px;
   padding: 64px 70px;
   box-sizing: border-box;
@@ -1232,7 +1221,7 @@ li:nth-child(5) .pagination-link {
 
 .close-modal {
   position: absolute;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
   width: 52px;
@@ -1243,17 +1232,17 @@ li:nth-child(5) .pagination-link {
 }
 
 .close-modal:hover {
-  background-color: rgba(230, 230, 230, 1);
+  background-color: #e6e6e6;
 }
 
 .close-modal:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: rgba(230, 230, 230, 1);
+  background-color: #e6e6e6;
 }
 
 .close-modal:focus {
-  background-color: rgba(230, 230, 230, 1);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .close-modal:focus:not(:focus-visible) {
@@ -1261,7 +1250,7 @@ li:nth-child(5) .pagination-link {
 }
 
 .close-modal:focus-visible {
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid #83b3d3;
 }
 
 .modal-content .main-title {
@@ -1274,8 +1263,8 @@ li:nth-child(5) .pagination-link {
 }
 
 .modal-search-form-input {
-  background-color: rgba(242, 242, 242, 1);
-  color: rgba(0, 0, 0, 1);
+  background-color: #f2f2f2;
+  color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1312,31 +1301,17 @@ li:nth-child(5) .pagination-link {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/*.modal-search-form-input:focus {*/
-/*  outline: 3px solid rgba(131, 179, 211, 1);*/
-/*}*/
+.modal-search-form-input:placeholder-shown:focus {
+  outline: 3px solid #83b3d3;
+}
 
 .modal-search-form-input:focus {
-  outline: 3px solid rgba(131, 179, 211, 1);
+  outline: 2px solid #000000;
 }
-
-.modal-search-form-input:focus:not(:focus-visible) {
-  outline: 2px solid rgba(0, 0, 0, 1);
-  /*border: 2px solid rgba(0, 0, 0, 1);*/
-}
-
-.modal-search-form-input:focus-visible {
-  outline: 3px solid rgba(131, 179, 211, 1);
-}
-
-/*.modal-search-form-input:placeholder-shown {*/
-/*  outline: none;*/
-/*  border: 2px solid rgba(0, 0, 0, 1);*/
-/*}*/
 
 .search-form-title {
   align-items: center;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -1415,14 +1390,14 @@ li:nth-child(5) .pagination-link {
 
 .button-amount:hover .plus-icon,
 .button-amount:hover .minus-icon {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 
 .button-amount:focus .plus-icon,
 .button-amount:focus .minus-icon {
-  color: rgba(0, 0, 0, 1);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  color: #000000;
+  outline: 3px solid #83b3d3;
 }
 
 .button-amount:focus:not(:focus-visible) .plus-icon,
@@ -1432,8 +1407,8 @@ li:nth-child(5) .pagination-link {
 
 .button-amount:focus-visible .plus-icon,
 .button-amount:focus-visible .minus-icon {
-  color: rgba(0, 0, 0, 1);
-  outline: 3px solid rgba(131, 179, 211, 1);
+  color: #000000;
+  outline: 3px solid #83b3d3;
 }
 
 .button-amount:active .plus-icon,
@@ -1447,12 +1422,12 @@ li:nth-child(5) .pagination-link {
   margin: 4px 0 0 0;
   font-size: 16px;
   line-height: 21px;
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
   padding-left: 157px;
 }
 
 .modal-search-form-wrong {
-  color: rgba(255, 87, 87, 1);
+  color: #ff5757;
 }
 
 .modal-search-form-button {
@@ -1515,8 +1490,8 @@ li:nth-child(5) .pagination-link {
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 19px solid #333333;
-	border-left: 19px solid transparent;
-	border-right: 19px solid transparent;
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
 }
 
 .tooltip {
