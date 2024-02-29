@@ -431,6 +431,7 @@ li:nth-child(5) .pagination-link {
   border-radius: 4px;
   width: 292px;
   height: 49px;
+  -webkit-appearance: none;
   appearance: none;
   background-image: url("../images/catalog/select.svg");
   background-repeat: no-repeat;
@@ -1144,6 +1145,7 @@ li:nth-child(5) .pagination-link {
   box-sizing: border-box;
   border-radius: 0 4px 4px 0;
   border: none;
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -1170,12 +1172,14 @@ li:nth-child(5) .pagination-link {
 .range-input::-webkit-outer-spin-button,
 .modal-search-form-input::-webkit-outer-spin-button,
 .modal-search-form-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
 
 .range-input,
 .modal-search-form-input {
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
